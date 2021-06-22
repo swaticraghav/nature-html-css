@@ -1,0 +1,540 @@
+/* -------------------------------------------------------- */
+/* ------------ BASIC SETUP  ----------- */
+/* -------------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato';
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* -------------------------------------------------------- */
+/* ------------ REUSABLE FEATURES  ----------- */
+/* -------------------------------------------------------- */
+
+h1 {
+    font-weight: 300;
+    word-spacing: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    word-spacing: 10px;
+    font-weight: 300;
+    font-size: 200%;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    content: " ";
+    background-color: #34d834;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* -------------------------------------------------------- */
+/* ------------ HEADER  ----------- */
+/* -------------------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-img {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 75px;
+    width: 7%;
+    float: left;
+} 
+
+nav ul {
+    float: right;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 80%;
+}
+
+nav ul li a:active,
+nav ul li a:hover {
+    color: #d8821f;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.hero-text {
+    margin-left: 20px;
+    color: white;
+    font-size: 140%;
+    font-weight: 400;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    left 200px;
+}
+
+.btn, 
+input[type=submit] {
+    text-decoration: none;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 200px;
+    font-size: 70%;
+}
+
+.btn-one:link,
+.btn-one:visited, 
+input[type=submit] {
+    background-color: #34d834;
+    color: white;
+    border: 1px solid white;
+    transition: background-color 0.5s;
+}
+
+.btn-one:active,
+.btn-one:hover, 
+input[type=submit] {
+    background-color: rgba(61, 152, 61, 0.97);
+    color: white;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 200px;
+    border: 1px solid white;
+}
+
+.btn-two:link,
+.btn-two:visited {
+    color: #34d834;
+    border: 1px solid #34d834;
+    transition: background-color 0.5s;
+}
+
+.btn-two:active,
+.btn-two:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: #34d834;
+}
+
+
+/* -------------------------------------------------------- */
+/* ------------ FEATURES  ----------- */
+/* -------------------------------------------------------- */
+
+.features-paragraph {
+    width: 70%;
+    margin-left: 15%;
+    line-height: 145%;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.icon-big {
+    text-align: center;
+    color: #34d834;
+    font-size: 250%;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.box h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 110%;
+}
+
+.box p {
+    line-height: 160%;
+    font-size: 80%
+}
+
+/* -------------------------------------------------------- */
+/* ------------ MULTIPLE IMAGES  ----------- */
+/* -------------------------------------------------------- */
+
+.images-row {
+    width: 100%;
+    list-style: none;
+}
+
+.images-row li {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.images-row li figure {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    
+}
+
+.images-row li figure img {
+    width: 100%;
+    opacity: 0.5;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.images-row li figure img:hover {
+    width: 100%;
+    height: auto;
+    transform: scale(1.05);
+   opacity: 1;
+}
+
+/* -------------------------------------------------------- */
+/* ------------ STEPS  ----------- */
+/* -------------------------------------------------------- */
+
+.columns-steps img {
+    width: 60%;
+    float: right;
+    height: 500px;
+}
+
+.each-step {
+    margin-bottom: 30px;
+}
+
+.columns-steps:last-of-type {
+    margin-top: 50px;
+}
+
+.each-step div {
+    border: 1px solid #34d834;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.each-step p {
+    display: inline-block;
+    width: 70%;
+    line-height: 35px;
+}
+
+.playstore img {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.playstore img:last-of-type {
+    margin-left: 50px;
+}
+
+/* -------------------------------------------------------- */
+/* ------------ TERRAIN BOXES  ----------- */
+/* -------------------------------------------------------- */
+
+.section-terrain {
+    background-color: rgba(145, 206, 145, 0.35);
+}
+
+.terrain-box img {
+    padding-right: 20px;
+    width: 95%;
+    height: 180px;
+}
+
+.terrain-box h3 {
+    margin-top: 20px;
+}
+
+.fetaure-list {
+    margin-top: 20px;
+}
+
+.feature {
+    margin-bottom: 10px;
+}
+
+.feature i {
+    display: inline-block;
+    color: #34d834;
+    margin-right: 8px;
+}
+
+.feature p {
+    display: inline-block;
+    font-size: 80%;
+}
+
+
+/* -------------------------------------------------------- */
+/* ------------ CUSTOMER REVIEWS  ----------- */
+/* -------------------------------------------------------- */
+
+
+.customer-reviews {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/background.jpg);
+    background-attachment: fixed
+}
+
+.customer-reviews h2 {
+    color: white;
+}
+
+blockquote {
+    color: white;
+    font-size: 85%;
+    width: 90%;
+}
+
+blockquote:before {
+    content: "\201c";
+    display: block;
+    font-size: 500%;
+    margin-bottom: -50px;
+}
+
+cite {
+    display: block;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    
+}
+
+blockquote img {
+    display: inline-block;
+    height: 80px;
+    width: 20%;
+    border-radius: 50%;
+    transform: scale(0.7);
+    vertical-align: middle;
+}
+
+
+/* -------------------------------------------------------- */
+/* ------------ MEMBERSHIP  ----------- */
+/* -------------------------------------------------------- */
+
+.section-membership {
+    background-color: rgba(145, 206, 145, 0.35);
+}
+
+.membership-one {
+    background-color: white;
+}
+
+.cost-information {
+    padding: 30px;
+}
+
+.cost-information h3 {
+    font-size: 180%;
+    font-weight: 300;
+}
+
+.cost-information ul {
+    list-style: none;
+    line-height: 30px;
+    font-size: 80%;
+}
+
+.cost-information ul li {
+   margin-bottom: 10px;
+}
+
+.price {
+    font-size: 380%;
+    color: #34d834;
+    font-weight: 200;
+}
+
+.price span {
+    font-size: 30%;
+}
+
+.price-text {
+    font-size: 70%;
+    margin-top: 20px;
+}
+
+.inside-space div {
+    border-bottom: 1px solid rgba(145, 206, 145, 0.35);
+}
+
+.ion-small {
+    font-size: 190%;
+    color: #34d834;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.cost-information a {
+    text-decoration: none;
+}
+
+
+/* -------------------------------------------------------- */
+/* ------------ FORMS  ----------- */
+/* -------------------------------------------------------- */
+
+
+.form-class {
+   padding-left: 265px;
+}
+
+input[type=text], 
+input[type=email],
+select, 
+textarea {
+    border-radius: 15px;
+    border: 1px solid #34d834;
+    padding: 9px;
+}
+
+input[type=submit] {
+    font-size: 100%;
+    padding: 10px 40px;
+}
+
+
+
+
+/* -------------------------------------------------------- */
+/* ------------ FOOTER  ----------- */
+/* -------------------------------------------------------- */
+
+
+footer {
+    background-color: #190f0f;
+}
+
+.footer-row-one, 
+.footer-row-two {
+    margin-top: 50px;
+}
+
+.footer-row-two ul{
+    float: right;
+}
+
+.footer-row-one ul, 
+.footer-row-two ul {
+    list-style: none;
+}
+
+.footer-row-one ul li,
+.footer-row-two ul li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 70%;
+}
+
+.footer-row-one ul li a:link,
+.footer-row-one ul li a:visited,
+.footer-row-two ul li a:link,
+.footer-row-two ul li a:visited {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.footer-row-one ul li a:active,
+.footer-row-one ul li a:hover {
+    color: #34d834;
+    text-decoration: none;
+}
+
+.ion-footer {
+   font-size: 140%; 
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+    font-size: 70%;
+    padding-bottom: 50px;
+}
+
+.icon-facebook:hover {
+    color: blue;
+}
+
+.icon-twitter:hover {
+    color: #00acee;
+}
+
+.icon-googleplus:hover {
+    color: red;
+}
+
+.icon-whatsapp:hover {
+    color: #1fde1f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
